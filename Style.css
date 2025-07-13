@@ -1,0 +1,483 @@
+/* Enable smooth scrolling when clicking anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  scroll-padding-top: 70px;
+}
+
+
+/* Reset default margins and paddings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------------------- */
+/*          HEADER STYLES     */
+/* --------------------------- */
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px 0 0;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Company Name */
+.cmp-name {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    line-height: 1.0;
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+span {
+    margin-left: 15px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation link container */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: background-color 0.3s color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #FFFFFF33;
+    color: #FFFF00;
+    border-radius: 5px;
+}
+
+/* Hidden menu */
+.menu-toggle {
+    display: none;
+}
+
+
+/* Hamburger menu icon (mobile only) */
+.menu-icon {
+    display: none;
+    font-size: 26px;
+    color: #ffffff;
+    cursor: pointer;
+    user-select: none;
+}
+
+.menu-icon::before {
+    content: "☰";
+}
+
+.menu-toggle:checked + menu.icon::before {
+    content: "✕";
+}
+
+/* NAV PAGE RESPONSIVENESS */
+@media (max-width: 768px) {
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    
+    /* Convert nav links to vertical dropdown */
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 45%;
+        width: 50%;
+        background: linear-gradient(to right, #1e3c72, #2a5298);
+        display: none;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    .menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+
+    .nav-links a {
+        text-align: center;
+        display: block;
+        padding: 10px 20px;
+        color: #fff;
+    }
+    
+    .head {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+/* --------------------------- */
+/*          HOME PAGE STYLES   */
+/* --------------------------- */
+.home-page {
+    background-color: #ffffff;
+    height: 100vh;
+    
+}
+
+.scrolling-text {
+    background-color: #2d8cf0;
+    color: white;
+    margin-top: 3px;
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+.home-section {
+    padding: 200px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 65vh;
+}
+
+.home-content {
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.home-content h1 {
+    font-size: 40px;
+    color: #2d8cf0;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+
+.home-btn {
+    background-color: #43da16;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+
+}
+
+.home-btn:hover {
+    background-color: #1a73e8;
+    color: black;
+}
+
+
+
+
+/* --------------------------- */
+/*        ABOUT PAGE STYLE     */
+/* --------------------------- */
+
+.about-page {
+  
+    padding: 80px 20px;
+    background-color:yellowgreen;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-left {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-left h2 {
+    font-size: 2.5rem;
+    color: #2d8cf0;
+    margin-bottom: 20px;
+}
+
+.about-left p {
+    font-size: 17px;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.about-points {
+    list-style: none;
+    padding: 0;
+}
+
+.about-points li {  
+    font-size: 16px;
+    color: #333;
+    margin: 12px 0;
+}
+
+.about-points i {
+    color: black;
+    margin-right: 10px;
+}
+
+.about-right {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.about-right img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.about-right img:active {
+    transform: scale(1.2);
+}
+
+
+
+
+
+/* --------------------------- */
+/*    SERVICES PAGE STYLES     */
+/* --------------------------- */
+
+.service-page {
+    background-color: white;
+    
+}
+
+.section-heading span {
+    display: block;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 40px 0 ;
+    margin-bottom: 30px;
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.program-card {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    margin: auto;
+    transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(#2d8cf0);
+}
+
+.program-card:hover i {
+    color: #fff;
+}
+
+.program-card:hover h2 {
+    color: white;
+}
+
+.program-card:hover p {
+    color: black;
+}
+
+.program-card:hover a {
+    color:  #b2ebf2;
+    text-decoration: underline;
+}
+
+.program-card i {
+    color: black;
+    font-size: 33px;
+    margin-bottom: 15px;
+    color: #2d8cf0;
+}
+
+.program-card h2 {
+    
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+.program-card p {
+    color: black;
+    font-size: 15px;
+    margin: 0 0 15px;
+    line-height: 1.3;
+    text-indent: 20px;
+    text-align: justify;
+}
+
+.program-card a {
+  margin-top: auto;
+  text-decoration: none;
+  font-weight: bold;
+  color: #007bff;
+  padding-top: 15px;
+}
+
+
+
+
+/* --------------------------- */
+/*     CONTACT PAGE STYLES     */
+/* --------------------------- */
+
+.contact-page {
+    background: linear-gradient(#ffdad5, #fff7f9);
+}
+
+.contact-container {
+            
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title {
+    font-weight: 600;
+    color: #a363aa;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #a363aa;
+    border-radius: 10px;
+    margin-bottom: 20px
+}
+
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+
+.contact-left textarea {
+    height: 150px;
+    padding-top: 15px;
+    border-radius: 20px;   
+}
+
+.contact-inputs:focus {
+    border: 2px solid #ff994f;
+}
+
+.contact-inputs::placeholder {
+    color :#a9a9a9;
+}
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
+}
+
+.contact-left button img {
+    height: 15px;
+}
+
+
+
+/*  CONTACT PAGE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+
+    .contact-inputs {
+        width: 80vw
+    }
+
+    .contact-right {
+        display: none;
+    }
+}
+
+
+
+
+/* FOOTER STYLES */
+
+footer {
+    height: 70px;
+    font-size: 16px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 24px;
+}
+

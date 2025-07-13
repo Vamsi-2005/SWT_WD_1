@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website vamsi</title>
+     <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="Style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- =========== HEADER =========== -->
+    <header class="head">
+        <!-- Company name -->
+        <section class="cmp-name">
+            SkillCraft <br> <span>Technologies</span>
+        </section>
+        <!--Hidden Checkbox for Menu toggle-->
+        <input type="checkbox" id="menu-checkbox" class="menu-toggle">
+        <!-- Label styled as hamburger icon -->
+        <label for="menu-checkbox" class="menu-icon"></label>
+        <!-- Navigation links -->
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+
+     <!-- =========== MAIN CONTENT =========== -->
+    <main>
+        <!-- ===== Home Section ===== -->
+        <section class="home-page" id="home">
+            <!-- Scrolling text -->
+            <div class="scrolling-text">
+                <marquee behavior="scroll" scrollamount="8" direction="left">
+                    Welcome To SkillCraft Technologies. (https://skillcrafttech.com)
+                </marquee>
+            </div>
+            <!-- Main heading and Button -->
+            <div class="home-section">
+                <div class="home-content">
+                    <h1>Empowering Students<br> with Real-World Skills</h1>
+                    <p>Join our certified internships and programs to gain practical experience and stand out in your career journey.</p>
+                    <a href="#courses" class="home-btn">Explore Courses</a>
+                </div>
+            </div>
+
+        </section>
+        
+        
+        <!-- ===== About Section ===== -->
+        <section class="about-page" id="about">
+            <div class="about-container">
+                <!-- Left Column: Text -->
+                <div class="about-left">
+                    <h2>About SkillCraft Technologies</h2>
+                    <p>
+                        At SkillCraft Technologies, we aim to empower students with industry-relevant skills through certified internships,
+                        hands-on projects, and expert mentorship. We bridge the gap between academic knowledge and real-world application.
+                    </p>
+                     <!-- Key points with icons -->
+                    <ul class="about-points">
+                        <li><i class="fas fa-laptop-code"></i> Real-World Projects & Internships</li>
+                        <li><i class="fas fa-chalkboard-teacher"></i> Expert Industry Mentors</li>
+                        <li><i class="fas fa-certificate"></i> Career-Building Certifications</li>
+                        <li><i class="fas fa-clock"></i> Flexible, Self-Paced Programs</li>
+                    </ul>
+                </div>
+
+                <!-- Right Column: Image -->
+                <div class="about-right">
+                  <img src="sec-about-img.png" alt="about-page">
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ===== Services Section ===== -->
+        <section class="courses" id="courses">
+            <section class="programs-section">
+                 <!-- Section heading -->
+                <div class="section-heading">
+                    <span>Our Internship & Course Programs</span>
+                </div>
+                 <!-- Service cards -->
+                <div class="programs-grid">
+                    <!-- Service card 1 -->
+                    <div class="program-card">
+                        <i class="fas fa-code"></i>
+                        <h2>Software Development</h2>
+                        <p>Design and develop powerful, scalable, and innovative software solutions tailored to meet modern business needs. 
+                            From planning to deployment, we turn ideas into reality with clean, efficient code.</p>
+                        <a href="#">Explore More  &#8594;</a>
+                    </div>
+                    <!-- Service card 2 -->
+                    <div class="program-card">
+                        <i class="fas fa-laptop-code"></i>
+                        <h2>Web Development</h2>
+                        <p>Create visually stunning, mobile-responsive, and SEO-friendly websites that offer seamless user experiences.
+                             We bring your digital presence to life with the latest web technologies.</p>
+                        <a href="#">Explore More →</a>
+                    </div>
+                    <!-- Service card 3 -->
+                    <div class="program-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h2>App Development</h2>
+                        <p>Build intuitive, high-performance mobile and desktop applications that drive user engagement.
+                             We specialize in Android, iOS, and cross-platform solutions that align with your goals.</p>
+                        <a href="#">Explore More  →</a>
+                    </div>
+                    <!-- Service card 4 -->
+                    <div class="program-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h2>Data & Analytics</h2>
+                        <p>Unlock the full potential of your data through advanced analytics, dashboards, and business
+                             intelligence solutions.Make informed decisions backed by real-time insights.</p>
+                        <a href="#">Explore More →</a>
+                    </div>
+                    <!-- Service card 5 -->
+                    <div class="program-card">
+                        <i class="fas fa-robot"></i>
+                        <h2>AI/ML Automation</h2>
+                        <p>Harness the power of Artificial Intelligence and Machine Learning to automate processes, predict
+                             trends, and drive intelligent business strategies. Precision meets innovation.</p>
+                        <a href="#">Explore More  &#8594;</a>
+                    </div>
+                    <!-- Service card 6 -->
+                    <div class="program-card">
+                        <i class="fas fa-shield-alt custom-icon"></i>
+                        <h2>Cybersecurity</h2>
+                        <p>Protect your digital assets with robust cybersecurity measures. From threat detection to risk
+                             mitigation, we secure your systems and ensure data integrity.</p>
+                        <a href="#">Explore More →</a>
+                    </div>
+                    <!-- Service card 7 -->
+                    <div class="program-card">
+                        <i class="fas fa-network-wired"></i>
+                        <h2>Internet of Things(IoT)</h2>
+                        <p>Bridge the physical and digital worlds through smart IoT systems. Monitor, control, and optimize
+                             your devices in real time with secure and scalable IoT architectures.</p>
+                        <a href="#">Explore More  →</a>
+                    </div>
+                    <!-- Service card 8 -->
+                    <div class="program-card">
+                        <i class="fas fa-paint-brush"></i>
+                        <h2>Graphic Designing</h2>
+                        <p>Turn ideas into impactful visuals with our creative graphic design services. From branding to
+                             marketing materials, we design with purpose and passion to elevate your identity.</p>
+                        <a href="#">Explore More →</a>
+                    </div>
+        
+                </div>
+            </section>
+        </section>
+         <!-- ===== Contact Section ===== -->
+        <section class="contact-page">
+            <div class="contact-container" id="contact">
+                <!-- Contact form -->
+                <form  class="contact-left" action="https://formsubmit.co/muluguruvamsi@gmail.com" method="POST">
+                    <div class="contact-left-title">
+                        Get in touch <hr>
+                    </div>
+                    <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                    <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                    <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                    <button type="submit">Submit <img src="left-con-img.png" alt=""></button>
+                </form>
+                 <!-- Right side image -->
+                <div class="contact-right">
+                    <img src="right-con-img.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =========== FOOTER =========== -->
+    <footer>
+        <p>2025 &copy; All rights reserved by SkillCraft Technologies.</p>
+    </footer>
+
+
+     <!-- JAVA SCRIPT  -->
+    <script>
+
+        // Get menu toggle checkbox
+        const menuToggle = document.querySelector('.menu-toggle');
+        // Get all navigation links
+        const navLinks = document.querySelectorAll('.nav-links a');
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            // Uncheck the menu toggle to close menu
+            menuToggle.checked = false;
+          });
+        });
+
+    </script>
+</body>
+</html>
